@@ -29,20 +29,26 @@ void Cal(){
 for (i = 0;i<n;i++)
 {
 if (m[i]>=90 && m[i]<=100)
-gp[i]=10;
+gp=10;
 else if (m[i]>=75 && m[i]<90)
-gp[i]=9;
+gp=9;
 else if (m[i]>=60 && m[i]<75)
-gp[i] = 8;
+gp = 8;
 else if (m[i]>=50 && m[i]<60)
-gp[i] = 7;
+gp = 7;
 else if (m[i]>=40 && m[i]<50)
-gp[i] = 6;
-else gp[i] = 0;
+gp = 6;
+else gp = 0;
 }
 
 sgpa = gp*cred[i]/
+}
 
+void Output(){
+System.outln("Student name " + name);
+System.outln("Student usn" + usn);
+System.outln("SGPA" + sgpa);
+}
 
 class StudDemo(){
 public static void main(){
