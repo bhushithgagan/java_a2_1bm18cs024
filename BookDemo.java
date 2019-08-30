@@ -50,3 +50,33 @@ class BookDemo{
 		}
 	}
 }
+
+OUTPUT:
+
+Enter the number of books
+2
+Enter the name of the book:
+rgrnsr
+Enter the name of the Author:
+awy4wj5
+Enter the price of the book:
+23
+Enter the number of pages:
+44
+Enter the name of the book:
+tyue
+Enter the name of the Author:
+awfdq
+Enter the price of the book:
+786
+Enter the number of pages:
+0988
+Book Details are :
+Book Name: rgrnsrrgrnsr
+Name of Author: awy4wj5awy4wj5 
+Price: 2323
+Number of pages: 4444
+Book Name: tyuetyue
+Name of Author: awfdqawfdq 
+Price: 786786
+Number of pages: 988988
