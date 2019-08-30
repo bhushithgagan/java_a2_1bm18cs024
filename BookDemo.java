@@ -51,7 +51,7 @@ class BookDemo{
 	}
 }
 
-OUTPUT:
+/*OUTPUT:
 
 Enter the number of books
 2
@@ -80,3 +80,4 @@ Book Name: tyuetyue
 Name of Author: awfdqawfdq 
 Price: 786786
 Number of pages: 988988
+*/
