@@ -25,12 +25,14 @@ String roll;
 int sem;
 Scanner sc1 = new Scanner(System.in);
 void in1() {
+    in();
 System.out.println("Enter Roll no. : ");
 roll = sc.next();
 System.out.println("Enter Semester : ");
 sem = sc.nextInt();
 }
 void disp1() {
+    disp();
 System.out.println("Entered Roll no. :  " + roll);
 System.out.println("Entered Semester :  " + sem);
 }
@@ -40,6 +42,7 @@ class Exam extends Stud {
 double m1,m2,avg;
 Scanner sc2 = new Scanner(System.in);
 void in2() {
+    in1();
 System.out.println("Enter Subject 1 marks:");
 m1 = sc.nextDouble();
 System.out.println("Enter Subject 2 marks:");
@@ -50,30 +53,25 @@ avg = (m1+m2)/2;
 return avg;
 }
 void disp3() {
+    disp1();
 System.out.println("Average marks of student =" + " " + avg);
 }
 }
 class Persondemo {
 public static void main (String args[]) {
 int n;
+//String top[] = new string();
 Scanner sc = new Scanner(System.in);
 System.out.println("Enter the number of students: ");
 n = sc.nextInt();
+Exam ref[]=new Exam[n];
 for(int i = 0;i<n;i++)
 {
-Person ref;
-ref = new Person();
-ref.in();
-ref.disp();
-Stud ref1;
-ref1 = new Stud();
-ref1.in1();
-ref1.disp1();
-Exam ref3;
-ref3 = new Exam();
-ref3.in2();
-ref3.av();
-ref3.disp3();
+
+ref[i] = new Exam();
+ref[i].in2();
+ref[i].av();
+ref[i].disp3();
 }
 }
 }
