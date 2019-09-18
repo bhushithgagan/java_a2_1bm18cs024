@@ -1,3 +1,5 @@
+//Program using toString() 
+
 import java.util.*;
 class Book{
 	String bname;
@@ -13,11 +15,11 @@ class Book{
 
 
 	public String toString() {
-		String s = ("Book Name: "+ bname);
-		String s1 = ("Name of Author:" + " " + bau );
-		String s2 =  (" Price:" + " " + pr);
-		String s3 =  ("Number of pages:" + " " + pa);
-		return (s+bname+s1+bau+s2+pr+s3+pa);
+		String s = ("\nBook Name: "+ bname + "\nName of Author:" + " " + bau + "\nPrice:" + " " + pr + "\nNumber of pages:" + " " + pa ) ;
+		//String s1 = ( "\nName of Author:" + " " + bau );
+		//String s2 =  ("\nPrice:" + " " + pr);
+		//String s3 =  ( "\nNumber of pages:" + " " + pa);
+		return (s);
 	}
 }
 class BookDemo{
@@ -33,7 +35,7 @@ class BookDemo{
 		for (i = 0;i<n;i++)
 		{
 			a[i] = new Book();
-			System.out.println("Enter the name of the book:");
+			System.out.println("Enter the name of the book " + (i+1) + " :");
 			bname = sc.next();
 			System.out.println("Enter the name of the Author:");
 			bau = sc.next();
@@ -43,7 +45,8 @@ class BookDemo{
 			pa = sc.nextInt();
 			a[i].Set(bname,bau,pr,pa);
 		}
-		System.out.println("Book Details are :");
+		System.out.println("*** Book Details are : ***");
+		
 		for (i= 0;i<n;i++)
 		{
 			System.out.println(a[i]);
@@ -51,33 +54,3 @@ class BookDemo{
 	}
 }
 
-/*OUTPUT:
-
-Enter the number of books
-2
-Enter the name of the book:
-rgrnsr
-Enter the name of the Author:
-awy4wj5
-Enter the price of the book:
-23
-Enter the number of pages:
-44
-Enter the name of the book:
-tyue
-Enter the name of the Author:
-awfdq
-Enter the price of the book:
-786
-Enter the number of pages:
-0988
-Book Details are :
-Book Name: rgrnsrrgrnsr
-Name of Author: awy4wj5awy4wj5 
-Price: 2323
-Number of pages: 4444
-Book Name: tyuetyue
-Name of Author: awfdqawfdq 
-Price: 786786
-Number of pages: 988988
-*/
