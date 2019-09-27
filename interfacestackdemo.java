@@ -37,8 +37,17 @@ class Stacktest implements Stack extends Stk {
 	n = n * 2;
 	int[] t = new int[n];
 	public void push() {
- 	for (int i = 0;i<n;i++) {
+ 	for (int i = t;i>0;i--) {
  	t[i] = s[i];
  	s = t ;
+    s[t++] = ele;
  	}
- 		 
+	super.display();
+   }
+}   
+
+class Interfacestackdemo {
+	Stack ref=null;
+	ref = new Stk();
+	ref.push();
+	
