@@ -71,3 +71,42 @@ class Abareademo {
 	ref.printarea();
 }
 }
+
+// OUTPUT
+
+*** Enter the Your Choice ***
+1 for Rectange
+2 for Triangle
+3 for circle
+
+1
+Enter the Length and breadth: 
+10
+20
+Area: 200.0
+
+*** Enter the Your Choice ***
+1 for Rectange
+2 for Triangle
+3 for circle
+
+2
+Enter the breadth and height: 
+5
+12
+Area: 30.0
+	
+*** Enter the Your Choice ***
+1 for Rectange
+2 for Triangle
+3 for circle
+
+3
+Enter the Radius: 
+5
+Area: 78.5
+
+
+
+
+
