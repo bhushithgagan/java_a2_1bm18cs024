@@ -72,7 +72,7 @@ class Abareademo {
 }
 }
 
-// OUTPUT
+/* OUTPUT
 
 *** Enter the Your Choice ***
 1 for Rectange
@@ -106,7 +106,6 @@ Enter the Radius:
 5
 Area: 78.5
 
-
-
+*/
 
 
